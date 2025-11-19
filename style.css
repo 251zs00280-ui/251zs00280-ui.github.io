@@ -36,9 +36,13 @@ h1, h2, h3 {
 -------------------- */
 
 ul {
-  list-style: disc; /* 普通の点に戻す */
+  list-style: disc; /* 黒丸に設定 */
 }
 
 li::marker {
-  color: var(--theme-color); /* リストの点の色をテーマカラーに */
+  color: var(--theme-color); /* リストの点をテーマカラーに */
+}
+
+li p {
+  margin: 0.5em 0 0 0; /* 段落がくっつきすぎないように上マージンを調整 */
 }
