@@ -3,7 +3,7 @@
 -------------------- */
 
 :root {
-  --theme-color: #00a0a0;
+  --theme-color: #1D46A8;
 }
 
 * {
@@ -19,6 +19,7 @@ body {
   margin: 0;
   padding: 30px;
   color: #333;
+  background: #8D97A8;
 }
 
 /* --------------------
@@ -35,9 +36,9 @@ h1, h2, h3 {
 -------------------- */
 
 ul {
-  list-style: none;
+  list-style: disc; /* 普通の点に戻す */
 }
-li:before {
-  content: "★";
-  color: var(--theme-color);
+
+li::marker {
+  color: var(--theme-color); /* リストの点の色をテーマカラーに */
 }
